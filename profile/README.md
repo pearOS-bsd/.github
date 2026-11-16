@@ -8,7 +8,7 @@
 
 [![Website](https://img.shields.io/badge/website-pearos.xyz-30d158?style=for-the-badge&logo=safari&logoColor=white)](https://pearos.xyz)
 [![FreeBSD](https://img.shields.io/badge/built%20on-FreeBSD-ab2b28?style=for-the-badge&logo=freebsd&logoColor=white)](https://www.freebsd.org)
-[![Repos](https://img.shields.io/badge/repositories-15-0a84ff?style=for-the-badge&logo=github&logoColor=white)](https://github.com/orgs/pearOS-bsd/repositories)
+[![Repos](https://img.shields.io/badge/repositories-26-0a84ff?style=for-the-badge&logo=github&logoColor=white)](https://github.com/orgs/pearOS-bsd/repositories)
 ![Visitors](https://komarev.com/ghpvc/?username=pearOS-bsd&label=Visitors&color=ff9f0a&style=for-the-badge)
 
 <img src="desktop.jpg" width="92%" alt="The pearOS desktop: Finder, Terminal, Dock">
@@ -41,7 +41,7 @@ flowchart TB
     K --> S["SkyLight — how apps talk to the screen"]
     S --> W["WindowServer — draws everything"]
     D["d — background services"] --- K
-    X["darwinator — lets FreeBSD run Mac programs"] --- O
+    X["darwinator + dyld — let FreeBSD run Mac programs"] --- O
     W --> F["🐚 FreeBSD"]
     X --> F
 ```
@@ -53,17 +53,25 @@ flowchart TB
 | | Repository | What it is |
 |---|---|---|
 | 🧠 | [**darwinator**](https://github.com/pearOS-bsd/darwinator) | Teaches FreeBSD to run programs made for a Mac. |
+| 🧬 | [**dyld**](https://github.com/pearOS-bsd/dyld) | The loader side: starts Mac programs and finds their libraries. |
+| 📥 | [**macdeps**](https://github.com/pearOS-bsd/macdeps) | Brings what Apple owns from *your own* Mac (scripts only). |
+| 🔌 | [**IOKit**](https://github.com/pearOS-bsd/IOKit) | The hardware layer Mac programs ask for. |
 | 🪟 | [**WindowServer**](https://github.com/pearOS-bsd/WindowServer) | The screen: windows, mouse, keyboard, animations. |
 | ✨ | [**SkyLight**](https://github.com/pearOS-bsd/SkyLight) | The “language” apps use to ask the screen for a window. |
+| 🎞️ | [**QuartzCore**](https://github.com/pearOS-bsd/QuartzCore) | Animations and layers. |
+| 🎨 | [**CoreUI**](https://github.com/pearOS-bsd/CoreUI) | Reads the Mac’s image catalogs (buttons, symbols). |
 | 🧩 | [**AppKit**](https://github.com/pearOS-bsd/AppKit) | The toolbox for buttons, menus and text — our own copy. |
 | 🚀 | [**open**](https://github.com/pearOS-bsd/open) | `open SomeApp.app` — starts a Mac app on pearOS. |
+| 🧰 | [**SDK**](https://github.com/pearOS-bsd/SDK) · [**LaunchServices**](https://github.com/pearOS-bsd/LaunchServices) | Compatibility pieces; icons and file types. |
 | ⚙️ | [**d**](https://github.com/pearOS-bsd/d) | Services that run quietly in the background. |
+| 🖥️ | [**apps**](https://github.com/pearOS-bsd/apps) | Dock, Finder, menu bar, login window, Terminal, TextEdit. |
+| 🧪 | [**tests**](https://github.com/pearOS-bsd/tests) | Runs real Mac apps and checks them. |
 | 💿 | [**iso**](https://github.com/pearOS-bsd/iso) | Builds the installer disk image. |
 | 🥾 | [**ploader**](https://github.com/pearOS-bsd/ploader) | The boot screen. |
 | 📦 | [**pkgbuild**](https://github.com/pearOS-bsd/pkgbuild) · [**package-repo**](https://github.com/pearOS-bsd/package-repo) | Where software packages come from. |
 | 🛍️ | [**AppStore-Backend**](https://github.com/pearOS-bsd/AppStore-Backend) | The server behind the App Store. |
 | 🎮 | [**virtio**](https://github.com/pearOS-bsd/virtio) · [**clevo_wmi**](https://github.com/pearOS-bsd/clevo_wmi) | Drivers (virtual graphics, Clevo keyboard lights). |
-| 🗃️ | [**misc**](https://github.com/pearOS-bsd/misc) | Everything not moved yet — it is being tidied up. |
+| 📚 | [**docs**](https://github.com/pearOS-bsd/docs) · [**research**](https://github.com/pearOS-bsd/research) | Documentation; notes, dumps and experiments. |
 
 ---
 
