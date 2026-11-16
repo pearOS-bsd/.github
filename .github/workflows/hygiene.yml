@@ -1,0 +1,14 @@
+name: hygiene
+# Reusable: every pearOS repository calls it (see its .github/workflows/hygiene.yml)
+on:
+  workflow_call:
+jobs:
+  hygiene:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - name: Fetch the shared script
+        run: curl -fsSL https://raw.githubusercontent.com/pearOS-bsd/.github/main/scripts/hygiene.sh -o /tmp/hygiene.sh
+      - name: Hygiene
+        run: bash /tmp/hygiene.sh
