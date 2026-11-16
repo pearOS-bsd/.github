@@ -59,6 +59,7 @@ flowchart TB
 | 🪟 | [**WindowServer**](https://github.com/pearOS-bsd/WindowServer) | The screen: windows, mouse, keyboard, animations. |
 | ✨ | [**SkyLight**](https://github.com/pearOS-bsd/SkyLight) | The “language” apps use to ask the screen for a window. |
 | 🎞️ | [**QuartzCore**](https://github.com/pearOS-bsd/QuartzCore) | Animations and layers. |
+| 🔮 | [**Solarium**](https://github.com/pearOS-bsd/Solarium) | Liquid Glass, the macOS 26 material (in progress). |
 | 🎨 | [**CoreUI**](https://github.com/pearOS-bsd/CoreUI) | Reads the Mac’s image catalogs (buttons, symbols). |
 | 🧩 | [**AppKit**](https://github.com/pearOS-bsd/AppKit) | The toolbox for buttons, menus and text — our own copy. |
 | 🚀 | [**open**](https://github.com/pearOS-bsd/open) | `open SomeApp.app` — starts a Mac app on pearOS. |
